@@ -93,12 +93,6 @@ blockquote:after {
     content: close-quote;
 }
 
-.article-text {
-    margin: 0px 5px;
-    text-align: justify;
-    word-break: break-all;
-}
-
 blockquote {
     quotes: "“" "”";
 }
