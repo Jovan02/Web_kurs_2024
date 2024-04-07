@@ -158,7 +158,16 @@ h1 {
     width: 200px;
 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    transform: scale(1); 
+    transition: transform 0.4s ease; 
 }
+
+.card:hover {
+    transform: scale(1.1); 
+    transition: transform 0.4s ease; 
+}
+
 
 .profile-img {
     width: 100%;
