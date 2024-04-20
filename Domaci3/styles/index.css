@@ -178,12 +178,26 @@ section.description {
 .card-wrapper .card-content h2 {
     margin-top: 0;
     margin-bottom: 8px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
 }
 
 .card-wrapper .card-content span {
     font-size: 12px;
     margin-bottom: 22px;
     color: #a3a3a3;
+}
+
+.card-wrapper p {
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .card-wrapper .card-content a {
