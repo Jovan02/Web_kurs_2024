@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drums</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="drums">
+                <button class="drum" onclick="handleDrumClick(this)">Q</button>
+                <button class="drum" onclick="handleDrumClick(this)">W</button>
+                <button class="drum" onclick="handleDrumClick(this)">E</button>
+                <button class="drum" onclick="handleDrumClick(this)">A</button>
+                <button class="drum" onclick="handleDrumClick(this)">S</button>
+                <button class="drum" onclick="handleDrumClick(this)">D</button>
+                <button class="drum" onclick="handleDrumClick(this)">Z</button>
+                <button class="drum" onclick="handleDrumClick(this)">X</button>
+                <button class="drum" onclick="handleDrumClick(this)">C</button>
+            </div>
+
+            <div class="options">
+                <div class="options-element">
+                    <label for="power">Power</label>
+                    <label class="toggle-power" name="power">
+                        <input type="checkbox" />
+                        <span class="slider-power"></span>
+                    </label>
+                </div>
+
+                <p class="display">None</p>
+
+                <div class="options-element slider-element">
+                    <label for="volume" class="volume-value">Volume: 50</label>
+                    <div class="slider-container">
+                        <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider volume-slider"
+                            id="myRange"
+                        />
+                    </div>
+                </div>
+
+                <div class="options-element">
+                    <label for="bank">Bank</label>
+                    <label class="toggle-bank" name="bank">
+                        <input type="checkbox" />
+                        <span class="slider-bank"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
