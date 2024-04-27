@@ -24,7 +24,7 @@ async function handleSignIn() {
         let data = await results.json();
 
         if (data.success) {
-            localStorage.setItem("accessTtoken", data.token);
+            localStorage.setItem("accessToken", data.token);
             localStorage.setItem("refreshToken", username);
         }
     } catch (err) {
